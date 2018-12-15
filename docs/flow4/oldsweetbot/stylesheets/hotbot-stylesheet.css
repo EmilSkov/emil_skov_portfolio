@@ -1,0 +1,331 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    margin: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    margin-top: 15%;
+}
+h1 {
+    font-size: 250%
+}
+h2 {
+    font-size: 1.1em;
+}
+h3 {
+    font-size: 1.1em;
+}
+.logo {
+    top: 0px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+	margin-bottom:10%;
+	
+}
+/*navigation*/
+
+
+nav {
+    width: 100%;
+    margin: 0 auto 2%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    height: 138px;
+    background-color: #FFFFFF;
+}
+#logo {
+    width: 50%;
+    margin: 0;
+}
+#logo img {
+    height: 90%;
+}
+#helenav {
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin: auto;
+}
+#menubaggrund {
+    height: 95%;
+    width: 100%;
+    background-image: url("../images/hotbot_image/hotbot-navbar_1.png");
+    background-repeat: no-repeat;
+    float: right;
+    display: table;
+}
+#punkter {
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 30px;
+    font-size: 1em;
+}
+#punkter li a {
+    padding: 20px 2px;
+}
+
+@media screen and (max-width: 1100px) {
+nav {
+    height: 90px;
+}
+#logo {
+    width: 22.5%;
+    overflow: visible;
+}
+#logo img {
+    width: 354.36px;
+    height: 80px;
+}
+#helenav {
+    width: 77.5%;
+    margin-top: 5.5px;
+}
+#menubaggrund {
+    width: 90%;
+    height: 45%;
+}
+#punkter {
+    width: 75%;
+    margin-top: 0;
+    font-size: 0.9em;
+    justify-content: space-between;
+}
+#punkter li a {
+    padding: 22.5px 0px;
+}
+}
+
+@media screen and (max-width: 800px) {
+#menubaggrund {
+    background-image: none;
+}
+#logo {
+    width: 25%;
+    height: 25%;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    position: fixed;
+    z-index: 1;
+}
+#logo img {
+    height: 60px;
+    width: 265.7px;
+}
+#helenav {
+    background: #B5B2B0;
+    width: 100%;
+    height: 60px;
+    margin-top: 0;
+}
+#punkter {
+    width: 100%;
+    padding: 10px 0;
+}
+#punkter li a {
+    padding: 5px 0;
+    font-size: 0.9em;
+}
+nav {
+    height: 61px;
+}
+}
+.kurv {
+    margin-top: -0.8em;
+}
+.menu:hover {
+    background-color: #DF9B67;
+    border-radius: 5px;
+}
+/*Generelt - Det styrer også footer*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+li {
+    float: right;
+    margin: 7px;
+    opacity: 0.5;
+}
+li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+li a:hover {
+    background-color: #DF9B67;
+}
+.produkter {
+    display: block;
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+}
+.column {
+    max-height: 500px;
+    width: 25%;
+    min-width: 140px;
+    min-height: auto;
+    justify-content: space-between;
+    background: rgba(181,178,176,0.2);
+    margin-right: 2%;
+    margin-left: 6%;
+    margin-top: 3%;
+    border: 1px solid #000000;
+    text-align: center;
+}
+.column .imgbox {
+    position: relative;
+    margin: 10px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 5px 0;
+}
+.column .imgbox img {
+    max-width: 75%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.column .details h3 {
+    margin-top: 10%;
+    margin-bottom: 2%;
+    color: black;
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+    align-content: center;
+}
+.column .details .detailstekst {
+    margin: 10px;
+    padding: 0 10px 0 10px;
+    max-width: 700%;
+    line-height: 1.3;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+.seprodukter a{
+    text-align: center;
+	background:#B5B2B0;
+	width:50%;
+    text-decoration: none;
+	border-radius:5px;
+	color: black;
+	
+}
+
+.details{
+	margin-bottom: 4%;
+}
+/*virksomheder og private -sites*/
+
+.beskrivelse-box {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-left: 5%;
+   
+}
+.products {
+    border: 1px solid black;
+    text-align: center;
+    width: 25%;
+    margin: 3%;
+    margin-top: 5%;
+    margin-left: 5%;
+   
+}
+.sales-img {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+}
+button {
+    background: white;
+    border-radius: 7px;
+    margin-bottom: 4%;
+    height: 25px;
+    min-width: 55px;
+	font-size: 15px;
+	color:black;
+}
+img {
+    align-content: center;
+}
+Footer {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(181,178,176,0.7);
+}
+Footer ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+    color: black;
+}
+Footer li {
+    float: left;
+}
+Footer li a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+.produkter, .beskrivelse-box, h2, p {
+    width: 100%;
+    text-align: center;
+}
+.products {
+    width: 40%;
+}
+.beskrivelse-box {
+    margin-left: 0%;
+}
+	
+	.column{
+		width:100%;
+			margin-left:20%;
+		margin-right:20%;
+	}
+}
+
+@media screen and (max-width: 633px) {
+.products {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h1 {
+font-size:30px;
+	}	
+	
+}

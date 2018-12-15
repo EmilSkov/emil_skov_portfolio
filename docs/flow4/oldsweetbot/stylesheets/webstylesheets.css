@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+
+Body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+p {
+	font-size: 0.9em;
+}
+
+/*section 1*/
+.projekter {
+	width: 100%;
+	margin-top: 12.5%;
+		display: -ms-flexbox; /* IE10 */
+	
+}
+.projectbox {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 4%;
+}
+.column {
+	position: relative;
+	max-height: 500px;
+	/*max-width: 540px;*/
+	width: 28.6%;
+	float: left;
+	background: rgba(181,178,176,0.2);
+	margin: 5px 1%;
+	border: 1px solid #000000;
+}
+.column a {
+	text-decoration: none;
+	color: black;
+}
+.column:hover {
+	box-shadow: inset 0 0 0 0.5px Black;
+	opacity: 0.8;
+}
+
+.column:hover h3 {
+	opacity: 1.2;
+	font-size: 1.2em;
+}
+
+.column .imgbox {
+	position: relative;
+	margin: 10px;
+	background: #FFFFFF;
+}
+.column .imgbox img {
+	max-width: 75%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.column .details h3 {
+	margin-top: 50px;
+	margin: 30px;
+	color: black;
+	text-align: center;
+	position: relative;
+	max-width: 100%;
+	align-content: center;
+}
+.column .details .detailstekst {
+	margin: 10px;
+	padding: 0 10px 0 10px;
+	max-width: 700%;
+	line-height: 1.3;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Sidebanner*/
+.banner {
+	position: fixed;
+	top: 50%;
+	right: 0px;
+	color: #000;
+}
+
+#sidebanner {
+	text-align: center;
+	max-width: 200px;
+	height: 50%;
+	position: fixed;
+	z-index: 1;
+	right: 0px;
+	background: #b5b2b0;
+	overflow-x: hidden;
+}
+#sidebanner img {
+	margin: auto;
+	padding: auto;
+	top: 0;
+	max-width: 100%;
+}
+
+
+.banner a {
+	color: black;
+}
+
+.banner h3 {
+	margin-top: 15px;
+	text-transform: uppercase;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+.banner {
+	display: none;
+}
+	.column {
+		flex: 47.5%;
+		-ma-flex: 47.5%;
+		max-width: 47.5%;
+	}
+	
+	.projectbox {
+		margin: 0%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	.column {
+		flex: 100%;
+		-ms-flex: 100%;
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
+	
+	.projekter {
+		margin-top: 5%;
+	}
+	
+	footer {
+		display: none;
+	}
+}

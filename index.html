@@ -11,6 +11,7 @@
 </head>
 
 <body>
+	<a id="frontanchor"></a>
 <div class="container">
   <header> <img class="f_image" src="images/forsideimage.jpg" alt="forside_billede">
     <h1 class="type"></h1>
@@ -18,14 +19,15 @@
     <div class="nav_overlay"></div>
     <nav>
       <ul>
-        <li><a class="red_nav" href="#">Forside</a></li>
-        <li><a class="blue_nav" href="#">Om mig</a></li>
-        <li><a class="yellow_nav" href="#">Portfolio</a></li>
-        <li><a class="green_nav" href="#">Kontakt</a></li>
+        <li><a class="red_nav" href="#frontanchor">Forside</a></li>
+        <li><a class="blue_nav" href="#aboutanchor">Om mig</a></li>
+        <li><a class="yellow_nav" href="#portfolioanchor">Portfolio</a></li>
+        <li><a class="green_nav" href="#contactanchor">Kontakt</a></li>
       </ul>
     </nav>
   </header>
   <section id="aboutpage">
+	  <a id="aboutanchor"></a>
     <div class="beskrivelse">
       <h1>Hvem er jeg?</h1>
       <p>Jeg hedder Emil Skov, og jeg studerer som multimediedesigner på CPHBusiness i Lyngby.
@@ -68,6 +70,7 @@
     </div>
   </section>
   <section id="portfolio_page">
+	  <a id="portfolioanchor"></a>
     <div class="portfolio_header">
       <h1>Portfolio</h1>
       <h2>1.semester</h2>
@@ -75,31 +78,33 @@
     <div class="flow"><a href="sites/prototyping.html"> <img src="images/mockups/prototype_moc.png" alt="prototype" class="flow_image">
       <h3>Flow 1</h3>
       <p>Prototyping</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat, enim et vehicula dignissim, odio sapien pretium tortor, id blandit erat nibh vitae libero. Nulla facilisi. Nullam diam diam, condimentum nec cursus non, tempor quis velit. Vivamus feugiat ornare orci vitae bibendum massa nunc.</p>
+      <p>I dette flow skulle jeg lave prototype af mit drømme portfolio og skulle bruge programmet Adobe xD, til at udarbejde opgaven</p>
       </a> </div>
-    <div class="flow"> <a href="sites/bygmitportfolio.html"> <img src="#" alt="#" class="flow_image">
+    <div class="flow"> <a href="sites/bygmitportfolio.html"> <img src="images/mockups/portfoliomoc.png" alt="portfoliomoc" class="flow_image">
       <h3>Flow 2</h3>
       <p>byg dit portolio</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat, enim et vehicula dignissim, odio sapien pretium tortor, id blandit erat nibh vitae libero. Nulla facilisi. Nullam diam diam, condimentum nec cursus non, tempor quis velit. Vivamus feugiat ornare orci vitae bibendum massa nunc.</p>
       </a></div>
-    <div class="flow"> <a href="sites/bygenapp.html"> <img src="#" alt="#" class="flow_image">
+    <div class="flow"> <a href="sites/bygenapp.html"> <img src="images/mockups/Bygenappmockup.png" alt="bygenappbillede" class="flow_image">
       <h3>Flow 3</h3>
       <p>byg en app</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat, enim et vehicula dignissim, odio sapien pretium tortor, id blandit erat nibh vitae libero. Nulla facilisi. Nullam diam diam, condimentum nec cursus non, tempor quis velit. Vivamus feugiat ornare orci vitae bibendum massa nunc.</p>
+      <p>Opgaven gik ud på at jeg skulle lave en vejr-app prototype via programmet Adobe xD.</p>
       </a></div>
-    <div class="flow"> <a href="sites/sweetbot.html"> <img src="#" alt="#" class="flow_image">
+    <div class="flow"> <a href="sites/sweetbot.html"> <img src="images/mockups/sweetbotmockup.png" alt="sweetbotbillede" class="flow_image">
       <h3>Flow 4</h3>
       <p>Sweetbot</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat, enim et vehicula dignissim, odio sapien pretium tortor, id blandit erat nibh vitae libero. Nulla facilisi. Nullam diam diam, condimentum nec cursus non, tempor quis velit. Vivamus feugiat ornare orci vitae bibendum massa nunc.</p>
+      <p>I denne opgave skulle jeg arbejde for første gang i en gruppe, vi skulle lave en responsive webløsning for digital firma ved navn Sweetbot</p>
       </a></div>
-    <div class="flow"><a href="sites/eksamen.html"> <img src="images/mockups/sweetbotmockup.png" alt="sweetbotbillede" class="flow_image">
-      <h3>Flow 5</h3>
-      <p>1. semester eksamensprojekt</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat, enim et vehicula dignissim, odio sapien pretium tortor, id blandit erat nibh vitae libero. Nulla facilisi. Nullam diam diam, condimentum nec cursus non, tempor quis velit. Vivamus feugiat ornare orci vitae bibendum massa nunc.</p>
+   		<div class="flow"><a href="sites/eksamen.html"> <img src="images/mockups/learningprocess.png" alt="learningbillede" class="flow_image">
+      <h3>Eksamensopgave og Læringspoces</h3>
+      <p>I dette flow vil i kunne se mit eksamen projekt som var at lave det portfolio i er inde på nu og læse min Læringspoces igennem det 1.semester </p>
       </a></div>
   </section>
   <section id="contact_page">
-    <h1>Kom i kontakt med mig</h1>
+	  <a id="contactanchor"></a>
+	  <div class="contact_header">
+      <h1>Kom i kontakt med mig</h1>
+    </div>
     <div id="emailform">
       <form action="sf131@cphbusiness.dk" method="post" enctype="text/plain">
         <h4>
@@ -125,7 +130,12 @@
     <div class="copyright">
       <p>&copy; 2018 - Emil Skov</p>
     </div>
-    <div class="social"> <a href="#" class="face">f</a> <a href="#" class="twitter">t</a> <a href="#" class="insta">in</a> <a href="#" class="linked">li</a> <a href="#" class="google">g</a> </div>
+    <div class="social">
+		<a href="https://www.facebook.com/meitrixx" target="_blank" class="face">f</a>
+		<a href="#" class="twitter">t</a> 
+		<a href="#" class="insta">in</a> 
+		<a href="#" class="linked">li</a> 
+		<a href="#" class="google">g</a> </div>
   </footer>
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

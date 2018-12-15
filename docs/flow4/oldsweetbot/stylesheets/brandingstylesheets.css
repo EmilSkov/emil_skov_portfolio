@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+Body {
+	
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/*page 1*/
+#projekter1{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 12.5%;
+	width: 100%;
+	
+}
+
+#projekter1 h1{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 2.5%;
+}
+
+#projekter1 h2{
+	margin: 10px 0;
+}
+
+.column1 {
+	float: left;
+	height: auto;
+	width: 40%;
+	background: rgba(181,178,176,0.3);
+	margin-left: 2%;
+}	
+
+.describe{
+	height: auto;
+	width: 40%;
+	background: rgba(181,178,176,0.3);
+	padding: 0 10px;
+	margin-left: 2%;
+
+}
+
+#link_hotbot:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 800px){
+	.column1, .describe{
+		width: 45%;
+		margin-left: 2.3%;
+	}
+}
+@media screen and (max-width: 600px){
+	.column1, .describe{
+		width: 90%;
+		margin: 0 5%;
+	}
+}
+.column1 img {
+	position: relative;
+	margin-left: 9%;
+	margin-top: 9%;
+	margin-bottom: 9%;
+	width: 80%;
+	height: auto;
+}
+/*Kontakt knap & scroll*/
+.contact{
+	margin-bottom: 3%;
+	margin-top: 7%;
+	text-align: center;
+	width: 100%;
+}
+.contact a{
+	color: #df9b67;
+	border-bottom: 1px solid #df9b67;
+}
+
+/*page 2*/
+#projekter2{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	width: 100%;
+	max-height: 500px;
+	min-height: 300px;
+	margin-bottom: 50px;
+	
+}
+
+#projekter2 p, h3 {
+	padding: 5px;
+}
+
+#headerside2{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.column {
+	position: relative;
+	height: 100%;
+	width: 30%;
+	background: rgba(181,178,176,0.3);
+	margin: auto;
+}
+
+
+@media screen and (max-width: 800px){
+	.column{
+		width: 45%;
+		margin: 0 auto 3% auto;
+	}
+}
+@media screen and (max-width: 600px){
+	.column{
+		width: 90%;
+		margin: 0 auto 3% auto;
+	}
+}
+.column:hover{
+	box-shadow: 0 0 0 0.5px black;
+	opacity: 0.8;
+}
+
+.column img {
+	width: 94%;
+	height: auto;
+	margin: 3%;
+	
+	
+}
+
+
+	
+

@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*generel text styles*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+p, a {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+/*Den her styrer navigationerne og footer*/
+* {
+	padding: 0;
+	margin: 0;
+}
+/*navigation*/
+/*DU SKAL KOPIER DET HER*/
+
+nav {
+	width: 100%;
+	margin: 0 auto 0;
+	top: 0;
+	position: fixed;
+	z-index: 1;
+	display: flex;
+	flex-wrap: wrap;
+	height: 138px;
+	background-color: #FFFFFF;
+}
+
+.current {
+	text-decoration: underline;
+	color: #000000;
+}
+
+#logo {
+	width: 50%;
+	margin: 0;
+}
+
+#logo img {
+	height: 90%;
+}
+
+#helenav{
+	width: 50%;
+	height: 100%;
+	float: left;
+	margin: auto;
+	
+}
+
+#menubaggrund {
+	height: 95%;
+	width: 100%;
+	background-image: url("../images/hotbot_image/hotbot-navbar_1.png");
+	background-repeat: no-repeat;
+	float: right;
+	display: table;
+}
+
+#punkter {
+	text-transform: uppercase;
+	display: table-cell;
+	vertical-align: middle;
+	margin-top: 30px;
+	font-size: 1em;
+}
+
+#punkter li a {
+	padding: 20px 2px;
+}
+
+
+
+/*Mobil navigation*/
+#logo_mobilvisning {
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	z-index: 3;
+}
+#mobilbaggrund, #logo_mobilvisning, #navikon {
+	display: none;
+}
+
+#mobilbaggrund {
+	position: fixed;
+	z-index: 9999;
+}
+#mobilnav {
+	position: fixed;
+	z-index: 3;
+	width: 200px;
+	height: auto;
+	right: 0px;
+	top: 120px;
+	background: none;
+}
+
+#mobilbaggrund img {
+	position: fixed;
+	z-index: 2;
+	height: 350px;
+	width: 320px;
+	right: 0px;
+	top: 110px;
+}
+
+
+#mobilnav ul {
+	list-style: none;
+	margin-top: 15px;
+}
+
+#mobilnav li a {
+	display: block;
+	font-size: 1.15em;
+	padding: 10px 0px;
+	width: 180px;
+	text-align: right;
+	color: black;
+	text-transform: uppercase;
+}
+
+
+#navikon {
+	position: fixed;
+	z-index: 3;
+	bottom: 10px;
+	right: 10px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+/*Generelt - Det styrer også footer*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	float: right;
+}
+
+li {
+    float: right;
+	margin: 7px;
+	opacity: 0.5;
+}
+
+li a {
+    display: block;
+	text-decoration: none;
+    color: black;
+	padding: 0 10px;
+}
+
+li a:hover {
+    background-color: #DF9B67;
+}
+
+
+/*Footer*/
+Footer {
+	width: 100%;
+	height: 50px;
+	background: rgba(181,178,176,0.7);
+}
+
+Footer ul {
+	list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+	float: left;
+	color: black;
+}
+Footer li {   
+	float: left;
+}
+
+Footer li a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+	
+}
+
+/*MEDIA*/
+
+@media screen and (max-width: 1100px){
+	nav {
+		height: 90px;
+	}
+	
+	#logo {
+		width: 22.5%;
+		overflow: visible;
+	}
+	#logo img {
+		height: 80px;
+		width: 354.26;
+	}
+	
+	#helenav {
+		width: 77.5%;
+		margin-top: 5.5px;
+	}
+	
+	#menubaggrund {
+		width: 90%;
+		height: 45%;
+	}
+	
+	#punkter {
+		width: 75%;
+		margin-top: 0;
+		font-size: 0.9em;
+		justify-content: space-between;
+	}
+	
+	#punkter li a {
+		padding: 22.5px 0px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#menubaggrund {
+		background-image: none;
+	}
+	
+	#logo {
+		width: 25%;
+		height: 25%;
+		padding: 0;
+		margin: 0;
+		overflow: visible;
+		position: fixed;
+		z-index: 1;
+	}
+	
+	#logo img {
+		height: 60px;
+		width: 265.7px;
+	}
+	
+	#helenav {
+		background: #B5B2B0;
+		width: 100%;
+		height: 60px;
+		margin-top: 0;
+	}
+	
+	#punkter {
+		width: 100%;
+		padding: 10px 0;
+	}
+	
+	#punkter li a {
+		padding: 5px 0;
+		font-size: 0.85em;
+	}
+	nav {
+		height: 61px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#navikon, #logo_mobilvisning {
+		display: block;
+	}
+	
+	#helenav, #logo, #menubaggrund, nav {
+		display: none;
+	}
+	
+	footer {
+		display: none;
+	}
+}

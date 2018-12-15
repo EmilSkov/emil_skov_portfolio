@@ -1,28 +1,30 @@
 @charset "utf-8";
 /* CSS Document */
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
     background: #232325;
-    font-family: sans-serif;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 .container {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
-
 .type {
-	font-weight: bold;
-	position: absolute;
-	top: 100px;
-	width: 100%;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	color: #E6567A;
-	font-size: 50px;
-	text-shadow: 0 2px 5px rgba(0,0,0,1);
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #E6567A;
+    font-size: 50px;
+    text-shadow: 0 2px 5px rgba(0,0,0,1);
 }
 .f_image {
     max-width: 100%;
@@ -115,262 +117,334 @@ nav ul li:hover {
 .green_nav {
     color: #3AD185;
 }
-
 #aboutpage {
     padding-top: 50px;
     padding-bottom: 150px;
-	height: 1000px;
+    height: 1000px;
 }
 .beskrivelse h1 {
-	text-align: center;
+    text-align: center;
     color: #00C0E4;
     font-size: 3em;
     letter-spacing: 12px;
     text-transform: uppercase;
 }
 .beskrivelse h2 {
-	text-align: center;
+    text-align: center;
     color: #00C0E4;
     font-size: 2em;
     letter-spacing: 12px;
     text-transform: uppercase;
-  
 }
 .beskrivelse p {
-	font-size: 1.2em;
-	padding: 50px;
-	color: #fff;
-	width: 50%;
-	margin: auto;
-	line-height: 1.6;
+    font-size: 1.2em;
+    padding: 50px;
+    color: #fff;
+    width: 50%;
+    margin: auto;
+    line-height: 1.6;
 }
 .beskrivelse img {
-	padding: 25px;
-	border-radius: 50%;
-	max-width: 20%;
-	display: block;
+    padding: 25px;
+    border-radius: 50%;
+    max-width: 20%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 .skills_box {
-	width: 50%;
-	height: 300px;
-	display: flex;
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	transform: translateX(-50%, -50%);
-	border-bottom: 2px solid #00C0E4;
-	border-left: 2px solid #00C0E4;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-50%, -50%);
+    border-bottom: 2px solid #00C0E4;
+    border-left: 2px solid #00C0E4;
 }
 .skills_box .skill {
-	position: relative;
-	flex: 1;
-	text-align: center;
+    position: relative;
+    flex: 1;
+    text-align: center;
 }
 .skills_box .skill .graph {
-	position: absolute;
-	width: 40px;
-	background: rgba(0,0,0,1);
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
+    position: absolute;
+    width: 40px;
+    background: rgba(0,0,0,1);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .skills_box .skill .graph:before {
-	content: "";
-	position: absolute;
-	top: 2px;
-	left: 2px;
-	right: 2px;
-	bottom: 0;
-	background: linear-gradient(0deg, #000, #00C0E4);
-} 
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 0;
+    background: linear-gradient(0deg, #000, #00C0E4);
+}
 .skills_box .skill .graph:after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 50%;
-	height: 100%;
-	background: rgba(255,255,255,.05);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,.05);
 }
 .skills_box .skill .graph .percent {
-	position: absolute;
-	top: -20px;
-	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
-	color: #00C0E4;
-	font-weight: bold;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #00C0E4;
+    font-weight: bold;
 }
 .skills_box .skill .skill_name {
-	position: absolute;
-	bottom: -30px;
-	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
-	color: #fff;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
 }
-
 #portfolio_page {
-	margin-top: 150px;
     padding-top: 50px;
     padding-bottom: 150px;
-	height: 1000px;
-	width: 100%;
-	padding: 0 5%;
-	display: -ms-flexbox; /* IE10 */
+    height: 1000px;
+    width: 100%;
+    padding: 0 5%;
+    display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
 }
 .portfolio_header {
-	width: 100%;
-	text-align: center;
-	margin-top: 10%;
-	color: #EAC14D;
-}
-.portfolio_header h2 {
-	margin-top: 50px;
-	font-size: 2em;
+    width: 100%;
+    text-align: center;
+    margin-top: 8%;
 }
 .portfolio_header h1 {
-	text-align: center;
+    text-align: center;
     color: #EAC14D;
     font-size: 3em;
     letter-spacing: 12px;
     text-transform: uppercase;
 }
+.portfolio_header h2 {
+    margin-top: 50px;
+    font-size: 2em;
+    color: #EAC14D;
+}
 .flow {
-	max-height: 500px;
+    max-height: 500px;
     flex: 27.5%;
-	max-width: 27.5%;
-	float: left;
-	overflow: hidden;
-	/*background: rgba(181,178,176,0.2);*/
-	background: #EAC14D;
-	border: 1px solid #000000;
-	text-align: center;
-	margin: 2.5%;
-	vertical-align: middle;
+    max-width: 27.5%;
+    float: left;
+    overflow: hidden;
+    /*background: rgba(181,178,176,0.2);*/
+    border: 1px solid #000000;
+    text-align: center;
+    margin: 2.5%;
+    vertical-align: middle;
+    padding: 2px;
+}
+.flow:hover {
+    border: 1px solid #EAC14D;
 }
 .flow a {
-	text-decoration: none;
-	color: black;
+    text-decoration: none;
+    color: black;
 }
 .flow img {
-	width: 100%
+    width: 100%
+}
+.flow p {
+    padding: 5px;
+    color: #fff;
+    font-size: 0.8em;
+}
+.flow h3 {
+    font-size: 1.2em;
+    color: #EAC14D;
 }
 #contact_page {
-	width: 100%;
-	margin-top:8%;
-	display: -ms-flexbox; /* IE10 */
+    padding-top: 50px;
+    width: 100%;
+    height: 500px;
+    display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-	color: #3AD185;
+    color: #3AD185;
 }
-
-#contact_page h1 {
+.contact_header {
+    width: 100%;
+    text-align: center;
     font-size: 3em;
-	width: 100%;
-	text-align: center;
-	margin-bottom: 2%;
-	color: #3AD185;
+    color: #3AD185;
+    margin-bottom: 2%;
 }
 #emailform {
-	
-	width: 20%;
-	margin-bottom: 5%;
-	margin-left: auto;
-	margin-right: auto;
+    width: 20%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-#emailform input,label,textarea {
-	width: 20vw;
-	border-radius: 4px;
-	margin: 10px 0;
+#emailform input, label, textarea {
+    width: 20vw;
+    border-radius: 4px;
+    margin: 10px 0;
 }
-
 form input {
-	width: 70%;
-	vertical-align: top;
+    width: 70%;
+    vertical-align: top;
 }
-
 #email {
-	width: 100%;
-	height: 300px;
+    width: 100%;
+    height: 300px;
 }
-
 input[type=submit] {
-	width: 40%;
-	margin: 0 30%;
-	background-color: #3AD185;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	border: none;
-	cursor: pointer;
-	color: #FFFFFF;
+    width: 40%;
+    margin: 0 30%;
+    background-color: #3AD185;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
 }
-
 input[type=submit]:hover {
-	background-color: #749CD3;
+    background-color: #749CD3;
 }
 footer {
-	width: 100%;
-	display: inline-block;
-	margin: 2em 0;
-	height: 70px;
+    width: 100%;
+    display: inline-block;
+    margin: 2em 0;
+    height: 70px;
 }
 .copyright {
-	width: 50%;
-	float: left;
+    width: 50%;
+    float: left;
 }
 footer p {
-	padding-left: 10%;
-	color: #fff;
-	font-size: 0.7em;
-	line-height: 70px;
-	text-transform: capitalize;
-	letter-spacing: 1px;
+    padding-left: 10%;
+    color: #fff;
+    font-size: 0.7em;
+    line-height: 70px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }
 .social {
-	width: 50%;
-	float: right;
+    width: 50%;
+    float: right;
 }
 footer a {
-	float: left;
-	line-height: 70px;
-	color: #fff;
-	text-align: center;
-	font-weight: bold;
-	text-decoration: none;
+    float: left;
+    line-height: 70px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
 }
 footer a:hover {
-	opacity: 0.7;
+    opacity: 0.7;
 }
 .face {
-	background: #1E83AE;
-	font-size: 1.2em;
-	width: 20%;
+    background: #1E83AE;
+    font-size: 1.2em;
+    width: 20%;
 }
 .twitter {
-	background: #3dacdd;
-	font-size: 1.2em;
-	width: 20%;
+    background: #3dacdd;
+    font-size: 1.2em;
+    width: 20%;
 }
 .insta {
-	background: #dd2a7b;
-	width: 20%;
-	font-size: 1.2em;
+    background: #dd2a7b;
+    width: 20%;
+    font-size: 1.2em;
 }
 .linked {
-	background: #3D5B94;
-	width: 20%;
-	font-size: 1.2em;
+    background: #3D5B94;
+    width: 20%;
+    font-size: 1.2em;
 }
 .google {
-	background: #db4a39;
-	width: 20%;
-	font-size: 1.2em;
+    background: #db4a39;
+    width: 20%;
+    font-size: 1.2em;
+}
+@media screen and (max-width: 1300px) {
+	#contact_page {
+    margin-top: 250px;
+    bottom: 0;
+		flex: 100%;}
+    .flow {
+        -ms-flex: 40%;
+        flex: 40%;
+        max-width: 40%;
+		margin: 4%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+.type {
+    top: 10%;
+    font-size: 40px;
+}
+.beskrivelse h1 {
+    flex: 80%;
+    font-size: 30px;
+    max-width: 100%;
+}
+.beskrivelse p {
+    width: 70%;
+}
+.skills_box {
+    width: 95%;
+}
+.portfolio_header {
+    /*top: 1000px;*/
+	margin-top: 120px;
+}
+.portfolio_header h1 {
+    font-size: 30px;
+}
+.flow {
+    -ms-flex: 80%;
+    flex: 80%;
+    max-width: 80%;
+    margin: 5% 10%;
+}
+.flow img {
+    width: 80%
+}
+.flow_image {
+    width: 30%;
+    margin: 20px;
+}
+.flow p {
+    width: 90%;
+    padding: 0 5%;
+    margin-bottom: 5%;
+}
+#contact_page {
+    margin-top: 850px;
+    bottom: 0;
+    flex: 100%;
+}
+.contact_header h1 {
+    font-size: 30px;
+}
+#emailform {
+    width: 90vw;
+}
+#emailform input, label, textarea {
+    width: 90vw;
+    height: 10vw;
+}
 }

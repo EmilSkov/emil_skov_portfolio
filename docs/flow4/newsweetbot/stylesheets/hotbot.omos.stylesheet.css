@@ -1,0 +1,434 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+/*generel text styles*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+p, a {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+logo {
+    top: 0px;
+	width:5px;
+	height:5px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kurv{
+	margin-top:-0.8em;
+}
+
+/*navigation*/
+
+#logo{
+	width:20%;
+	margin-left:10%;
+	margin-top: 2%;
+}
+
+nav {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+	
+	
+}
+
+#punkter {
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align: center;
+    font-size: 1em;
+
+	
+}
+#helenav {
+    width:70%;
+    height: 100%;
+    margin-top:5%;
+	background:rgba(223,155,103,0.7)
+	
+	
+}
+
+#punkter li a {
+    padding: 10px 10px;
+	text-decoration: none;
+	
+}
+
+
+
+
+/*Generelt - Det styrer også footer*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+li {
+    float: right;
+    margin: 7px;
+    opacity: 0.5;
+}
+li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+li a:hover {
+    background-color: #DF9B67;
+}
+
+button{
+	background: #DF9B67;
+}
+
+/*Section 1 - Om os*/
+#om_os {
+	text-align: center;
+	display: block;
+	width: 65%;
+	margin-left: 17.5%;
+	margin-top: 15%;
+	padding: 0;
+}
+
+article {
+  -webkit-columns: 2 200px;
+     -moz-columns: 2 200px;
+          columns: 2 200px;
+  -webkit-column-gap: 4em;
+     -moz-column-gap: 4em;
+          column-gap: 4em;
+	column-count: 2;
+	text-align: left;
+	padding: auto;
+	margin: 5% auto auto;
+}
+/*Section 2 - Kontakt*/
+#kontakt {
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+/*Section 3 - Med arbejdere*/
+
+#medarbejder_section {
+    width: 100%;
+    padding: 0 5%;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+.medarbejder {
+    /*position: relative;*/
+    max-height: 600px;
+    /*max-width: 540px;*/
+    -ms-flex: 27.5%; /* IE10 */
+    flex: 27.5%;
+    max-width: 27.5%;
+    float: left;
+    overflow: hidden;
+    background: rgba(181,178,176,0.2);
+    border: 1px solid #000000;
+    text-align: center;
+    margin: 2.5%;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+.medarbejder {
+    -ms-flex: 40%;
+    flex: 40%;
+    max-width: 40%;
+    margin: 4%;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.medarbejder {
+    -ms-flex: 80%;
+    flex: 80%;
+    max-width: 80%;
+    margin: 5% 10%;
+}
+}
+.personbillede {
+    width: 50%;
+    margin: 20px;
+}
+.medarbejder p {
+    width: 90%;
+    padding: 0 5%;
+}
+article{
+	text-align: center;
+}
+
+/*Footer*/
+Footer {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(181,178,176,0.7);
+}
+Footer ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+    color: black;
+}
+Footer li {
+    float: left;
+}
+Footer li a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+/*Section 3*/
+#visit {
+    width: 100%;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+#visit h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+#visitbillede {
+    width: 30%;
+    margin-left: 15%;
+    margin-top: 2.5%;
+}
+#visitbillede img {
+    width: 100%;
+}
+/*Email form styles*/
+
+#emailform {
+    margin-left: 7%;
+    width: 20%;
+    margin-bottom: 5%;
+}
+#emailform input, label, textarea {
+    margin: 10px 0;
+}
+form input {
+    width: 70%;
+    vertical-align: top;
+}
+#email {
+    width: 100%;
+    height: 300px;
+}
+input[type=submit] {
+    width: 40%;
+    margin: 0 30%;
+    background-color: #3D6BB4;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+input[type=submit]:hover {
+    background-color: #749CD3;
+}
+
+@media screen and (max-width: 1100px) {
+#visitbillede {
+    margin-left: 7%;
+    width: 35%;
+}
+#emailform {
+    width: 42%;
+}
+}
+
+@media screen and (max-width: 800px) {
+#emailform {
+    width: 60%;
+    margin-left: 20%;
+}
+#visitbillede {
+    display: none;
+}
+}
+
+@media screen and (max-width: 600px) {
+#emailform {
+    width: 80%;
+    margin-left: 10%;
+}
+#visit h1 {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px){
+	
+nav {
+    height: 50px;
+}
+
+#logo{
+	width:10%;
+	margin-left:6%;
+	margin-top: 1%;
+		margin-right: 14%
+}
+
+
+	
+}
+
+@media screen and (max-width: 920px){
+	footer{
+		display:none;
+	}
+}
+	
+	
+@media screen and (max-width: 804px){
+	nav {
+    height: 50px;
+	
+}
+	
+	#logo{
+	width:10%;
+	margin-left:3%;
+	margin-top: 1%;
+		margin-right: 17%
+				
+}
+	
+	.produkter{
+		margin-top:10%;
+	}
+}
+
+@media screen and (max-width:671px){
+	#punkter li a{
+		padding: 10px 5px 5px 5px;
+	}
+	
+}
+
+@media screen and (max-width:633px){
+	#punkter li a{
+		padding: 11px 4px 4px 4px;
+	    font-size: 10px;}
+.kurv{
+		width:25px;
+		height:25px;
+	}
+}
+@media screen and (max-width:591px){
+	#punkter li a {
+		padding:0px 8px 8px 8px;;
+		font-size:8px;
+
+	}
+	#helenav{
+		width:70%;
+		height:25px;
+		margin-top:10%;
+	}
+	
+	.kurv{
+		width:20px;
+		height:20px;
+	}
+	
+	
+
+}
+
+@media screen and (max-width:500px){
+	
+	
+	.container{
+		margin-top:20%;
+}
+	}
+
+
+
+@media screen and (max-width:409px){
+	
+	.container{
+		margin-top:35%;
+	}
+	#logo{
+	width:7%;
+	margin-left:3%;
+	margin-top: 1%;
+	margin-right: 30%
+}
+	.kurv{
+		width:15px;
+		height:15px;
+	}
+
+
+#helenav{
+		width:60%;
+		height:20px;
+		margin-top:12%;
+	}
+	
+	#punkter li a {
+		padding:0px 2px 4px 2px;
+		font-size:4px;
+		
+		
+	
+	}
+	
+	
+	
+	}
