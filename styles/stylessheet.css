@@ -272,7 +272,7 @@ nav ul li:hover {
     color: #EAC14D;
 }
 #contact_page {
-    padding-top: 50px;
+    padding-top: 150px;
     width: 100%;
     height: 500px;
     display: -ms-flexbox; /* IE10 */
@@ -433,11 +433,11 @@ footer a:hover {
     margin-bottom: 5%;
 }
 #contact_page {
-    margin-top: 850px;
-    bottom: 0;
+    margin-top: 200%;
+	bottom: 0;
     flex: 100%;
 }
-.contact_header h1 {
+.contact_header h1 { 
     font-size: 30px;
 }
 #emailform {

@@ -1,64 +1,93 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-    margin: 0;
-    padding: 0;
-    background: #232325;
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin: 0;
+	padding: 0;
+	background: #232325;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 #beskrivelse {
-    padding-top: 50px;
-    padding-bottom: 150px;
-    height: 1000px;
+	padding-top: 50px;
+	padding-bottom: 150px;
+	height: 1000px;
 }
 #beskrivelse h1 {
-    text-align: center;
-    color: #EAC14D;
-    font-size: 3em;
-    letter-spacing: 12px;
-    text-transform: uppercase;
+	text-align: center;
+	color: #EAC14D;
+	font-size: 3em;
+	letter-spacing: 12px;
+	text-transform: uppercase;
 }
 #beskrivelse h3 {
-    text-align: center;
-    color: #EAC14D;
-    font-size: 1em;
-    text-transform: uppercase;
+	text-align: center;
+	color: #EAC14D;
+	font-size: 1em;
+	text-transform: uppercase;
 }
 #beskrivelse p {
-    font-size: 1.2em;
-    padding: 50px;
-    color: #fff;
-    width: 50%;
-    margin: auto;
-    line-height: 1.6;
+	font-size: 1.2em;
+	padding: 50px;
+	color: #fff;
+	width: 50%;
+	margin: auto;
+	line-height: 1.6;
 }
 #beskrivelse a {
-    color: #fff;
-    padding: 20px;
-    text-decoration: underline;
+	color: #fff;
+	padding: 20px;
+	text-decoration: underline;
 }
 #beskrivelse img {
-    padding: 25px;
-    max-width: 20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+	padding: 25px;
+	max-width: 20%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 1300px) {
+#contact_page {
+	margin-top: 250px;
+	bottom: 0;
+	flex: 100%;
+}
+.flow {
+	-ms-flex: 40%;
+	flex: 40%;
+	max-width: 40%;
+	margin: 4%;
+}
 #beskrivelse a {
-    display: block;
-    padding: 10px;
+	display: block;
+	padding: 10px;
 }
 #beskrivelse h1 {
-    flex: 80%;
-    font-size: 30px;
-    max-width: 100%;
+	flex: 80%;
+	font-size: 30px;
+	max-width: 100%;
 }
 #beskrivelse p {
-    width: 70%;
+	width: 70%;
 }
 #beskrivelse img {
-    max-width: 90%;
+	max-width: 90%;
+}
+}
+
+@media only screen and (max-width: 700px) {
+#beskrivelse a {
+	display: block;
+	padding: 10px;
+}
+#beskrivelse h1 {
+	flex: 80%;
+	font-size: 30px;
+	max-width: 100%;
+}
+#beskrivelse p {
+	width: 70%;
+}
+#beskrivelse img {
+	max-width: 90%;
 }
 }
