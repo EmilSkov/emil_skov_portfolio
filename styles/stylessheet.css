@@ -1,450 +1,474 @@
 @charset "utf-8";
 /* CSS Document */
-
+/*Gør scrolling smooth igennnem siden*/
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 body {
-    margin: 0;
-    padding: 0;
-    background: #232325;
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin: 0;
+	padding: 0;
+	background: #232325;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 .container {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
+/*animated tekst i header*/
 .type {
-    font-weight: bold;
-    position: absolute;
-    top: 100px;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: #E6567A;
-    font-size: 50px;
-    text-shadow: 0 2px 5px rgba(0,0,0,1);
+	font-weight: bold;
+	position: absolute;
+	top: 100px;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: #E6567A;
+	font-size: 50px;
+	text-shadow: 0 2px 5px rgba(0,0,0,1);
 }
+/*forside billede*/
 .f_image {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
+/*navigation toggle*/
 .nav_toggle {
-    position: fixed;
-    top: 20px;
-    right: 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 1;
+	position: fixed;
+	top: 20px;
+	right: 50px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 1;
 }
 .nav_toggle:before {
-    content: "+";
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 50px;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50px;
-    background: #E6567A;
-    transition: 0.5s;
+	content: "+";
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 50px;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50px;
+	background: #E6567A;
+	transition: 0.5s;
 }
 .nav_toggle.active:before {
-    transform: rotate(405deg);
-    background-color: yellow;
-    color: #000;
+	transform: rotate(405deg);
+	background-color: yellow;
+	color: #000;
 }
 .nav_overlay {
-    position: fixed;
-    top: 20px;
-    right: 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: rgba(0,0,0,0.95);
-    transition: transform 0.5s;
+	position: fixed;
+	top: 20px;
+	right: 50px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: rgba(0,0,0,0.95);
+	transition: transform 0.5s;
 }
 .nav_overlay.active {
-    transform: scale(100, 100);
+	transform: scale(100, 100);
 }
+/*navigation*/
 nav {
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    z-index: 1;
-    visibility: hidden;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	z-index: 1;
+	visibility: hidden;
 }
 nav.active {
-    visibility: visible;
-    transition-delay: 0.2s;
+	visibility: visible;
+	transition-delay: 0.2s;
 }
 nav ul {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0;
 }
 nav ul li a {
-    position: relative;
-    font-size: 48px;
-    text-decoration: none;
-    margin: 50px 0;
-    display: block;
-    font-weight: bold;
-    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+	position: relative;
+	font-size: 48px;
+	text-decoration: none;
+	margin: 50px 0;
+	display: block;
+	font-weight: bold;
+	text-shadow: 0 2px 5px rgba(0,0,0,.5);
 }
 nav ul li:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
+/*navigation farver*/
 .red_nav {
-    color: #E6567A;
+	color: #E6567A;
 }
 .blue_nav {
-    color: #00C0E4;
+	color: #00C0E4;
 }
 .yellow_nav {
-    color: #EAC14D;
+	color: #EAC14D;
 }
 .green_nav {
-    color: #3AD185;
+	color: #3AD185;
 }
+/*om mig siden*/
 #aboutpage {
-    padding-top: 50px;
-    padding-bottom: 150px;
-    height: 1000px;
+	padding-top: 50px;
+	padding-bottom: 150px;
+	height: 1000px;
 }
 .beskrivelse h1 {
-    text-align: center;
-    color: #00C0E4;
-    font-size: 3em;
-    letter-spacing: 12px;
-    text-transform: uppercase;
+	text-align: center;
+	color: #00C0E4;
+	font-size: 3em;
+	letter-spacing: 12px;
+	text-transform: uppercase;
 }
 .beskrivelse h2 {
-    text-align: center;
-    color: #00C0E4;
-    font-size: 2em;
-    letter-spacing: 12px;
-    text-transform: uppercase;
+	text-align: center;
+	color: #00C0E4;
+	font-size: 2em;
+	letter-spacing: 12px;
+	text-transform: uppercase;
 }
 .beskrivelse p {
-    font-size: 1.2em;
-    padding: 50px;
-    color: #fff;
-    width: 50%;
-    margin: auto;
-    line-height: 1.6;
+	font-size: 1.2em;
+	padding: 50px;
+	color: #fff;
+	width: 50%;
+	margin: auto;
+	line-height: 1.6;
 }
 .beskrivelse img {
-    padding: 25px;
-    border-radius: 50%;
-    max-width: 20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+	padding: 25px;
+	border-radius: 50%;
+	max-width: 20%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
+/*skill graph*/
 .skills_box {
-    width: 50%;
-    height: 300px;
-    display: flex;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateX(-50%, -50%);
-    border-bottom: 2px solid #00C0E4;
-    border-left: 2px solid #00C0E4;
+	width: 50%;
+	height: 300px;
+	display: flex;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	transform: translateX(-50%, -50%);
+	border-bottom: 2px solid #00C0E4;
+	border-left: 2px solid #00C0E4;
 }
 .skills_box .skill {
-    position: relative;
-    flex: 1;
-    text-align: center;
+	position: relative;
+	flex: 1;
+	text-align: center;
 }
 .skills_box .skill .graph {
-    position: absolute;
-    width: 40px;
-    background: rgba(0,0,0,1);
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+	position: absolute;
+	width: 40px;
+	background: rgba(0,0,0,1);
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .skills_box .skill .graph:before {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    right: 2px;
-    bottom: 0;
-    background: linear-gradient(0deg, #000, #00C0E4);
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	right: 2px;
+	bottom: 0;
+	background: linear-gradient(0deg, #000, #00C0E4);
 }
 .skills_box .skill .graph:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255,255,255,.05);
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255,255,255,.05);
 }
 .skills_box .skill .graph .percent {
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: #00C0E4;
-    font-weight: bold;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	color: #00C0E4;
+	font-weight: bold;
 }
 .skills_box .skill .skill_name {
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: #fff;
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	color: #fff;
 }
+/*portfolio siden*/
 #portfolio_page {
-    padding-top: 50px;
-    padding-bottom: 150px;
-    height: 1000px;
-    width: 100%;
-    padding: 0 5%;
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
+	padding-top: 50px;
+	padding-bottom: 150px;
+	height: 1000px;
+	width: 100%;
+	padding: 0 5%;
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
 }
 .portfolio_header {
-    width: 100%;
-    text-align: center;
-    margin-top: 8%;
+	width: 100%;
+	text-align: center;
+	margin-top: 8%;
 }
 .portfolio_header h1 {
-    text-align: center;
-    color: #EAC14D;
-    font-size: 3em;
-    letter-spacing: 12px;
-    text-transform: uppercase;
+	text-align: center;
+	color: #EAC14D;
+	font-size: 3em;
+	letter-spacing: 12px;
+	text-transform: uppercase;
 }
 .portfolio_header h2 {
-    margin-top: 50px;
-    font-size: 2em;
-    color: #EAC14D;
+	margin-top: 50px;
+	font-size: 2em;
+	color: #EAC14D;
 }
 .flow {
-    max-height: 500px;
-    flex: 27.5%;
-    max-width: 27.5%;
-    float: left;
-    overflow: hidden;
-    /*background: rgba(181,178,176,0.2);*/
-    border: 1px solid #000000;
-    text-align: center;
-    margin: 2.5%;
-    vertical-align: middle;
-    padding: 2px;
+	max-height: 500px;
+	flex: 27.5%;
+	max-width: 27.5%;
+	float: left;
+	overflow: hidden;
+	border: 1px solid #000000;
+	text-align: center;
+	margin: 2.5%;
+	vertical-align: middle;
+	padding: 2px;
 }
 .flow:hover {
-    border: 1px solid #EAC14D;
+	border: 1px solid #EAC14D;
 }
 .flow a {
-    text-decoration: none;
-    color: black;
+	text-decoration: none;
+	color: black;
 }
 .flow img {
-    width: 100%
+	width: 100%
 }
 .flow p {
-    padding: 5px;
-    color: #fff;
-    font-size: 0.8em;
+	padding: 5px;
+	color: #fff;
+	font-size: 0.8em;
 }
 .flow h3 {
-    font-size: 1.2em;
-    color: #EAC14D;
+	font-size: 1.2em;
+	color: #EAC14D;
 }
+/*kontakt siden*/
 #contact_page {
-    padding-top: 150px;
-    width: 100%;
-    height: 500px;
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    color: #3AD185;
+	padding-top: 150px;
+	width: 100%;
+	height: 500px;
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	color: #3AD185;
 }
 .contact_header {
-    width: 100%;
-    text-align: center;
-    font-size: 3em;
-    color: #3AD185;
-    margin-bottom: 2%;
+	width: 100%;
+	text-align: center;
+	font-size: 3em;
+	color: #3AD185;
+	margin-bottom: 2%;
 }
+/*Email og besked formulaen*/
 #emailform {
-    width: 20%;
-    margin-bottom: 5%;
-    margin-left: auto;
-    margin-right: auto;
+	width: 20%;
+	margin-bottom: 5%;
+	margin-left: auto;
+	margin-right: auto;
 }
 #emailform input, label, textarea {
-    width: 20vw;
-    border-radius: 4px;
-    margin: 10px 0;
+	width: 20vw;
+	border-radius: 4px;
+	margin: 10px 0;
 }
 form input {
-    width: 70%;
-    vertical-align: top;
+	width: 70%;
+	vertical-align: top;
 }
 #email {
-    width: 100%;
-    height: 300px;
+	width: 100%;
+	height: 300px;
 }
 input[type=submit] {
-    width: 40%;
-    margin: 0 30%;
-    background-color: #3AD185;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border: none;
-    cursor: pointer;
-    color: #FFFFFF;
+	width: 40%;
+	margin: 0 30%;
+	background-color: #3AD185;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border: none;
+	cursor: pointer;
+	color: #FFFFFF;
 }
 input[type=submit]:hover {
-    background-color: #749CD3;
+	background-color: #749CD3;
 }
+/*footer i bunden*/
 footer {
-    width: 100%;
-    display: inline-block;
-    margin: 2em 0;
-    height: 70px;
+	width: 100%;
+	display: inline-block;
+	margin: 2em 0;
+	height: 70px;
 }
 .copyright {
-    width: 50%;
-    float: left;
+	width: 50%;
+	float: left;
 }
 footer p {
-    padding-left: 10%;
-    color: #fff;
-    font-size: 0.7em;
-    line-height: 70px;
-    text-transform: capitalize;
-    letter-spacing: 1px;
+	padding-left: 10%;
+	color: #fff;
+	font-size: 0.7em;
+	line-height: 70px;
+	text-transform: capitalize;
+	letter-spacing: 1px;
 }
+/*social links*/
 .social {
-    width: 50%;
-    float: right;
+	width: 50%;
+	float: right;
 }
 footer a {
-    float: left;
-    line-height: 70px;
-    color: #fff;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: none;
+	float: left;
+	line-height: 70px;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
 }
 footer a:hover {
-    opacity: 0.7;
+	opacity: 0.7;
 }
 .face {
-    background: #1E83AE;
-    font-size: 1.2em;
-    width: 20%;
+	background: #1E83AE;
+	font-size: 1.2em;
+	width: 20%;
 }
 .twitter {
-    background: #3dacdd;
-    font-size: 1.2em;
-    width: 20%;
+	background: #3dacdd;
+	font-size: 1.2em;
+	width: 20%;
 }
 .insta {
-    background: #dd2a7b;
-    width: 20%;
-    font-size: 1.2em;
+	background: #dd2a7b;
+	width: 20%;
+	font-size: 1.2em;
 }
 .linked {
-    background: #3D5B94;
-    width: 20%;
-    font-size: 1.2em;
+	background: #3D5B94;
+	width: 20%;
+	font-size: 1.2em;
 }
 .google {
-    background: #db4a39;
-    width: 20%;
-    font-size: 1.2em;
-}
-@media screen and (max-width: 1300px) {
-	#contact_page {
-    margin-top: 250px;
-    bottom: 0;
-		flex: 100%;}
-    .flow {
-        -ms-flex: 40%;
-        flex: 40%;
-        max-width: 40%;
-		margin: 4%;
-    }
+	background: #db4a39;
+	width: 20%;
+	font-size: 1.2em;
 }
 
+/*Jquery responsive til IPad*/
+@media screen and (max-width: 1300px) {
+#contact_page {
+	margin-top: 250px;
+	bottom: 0;
+	flex: 100%;
+}
+.flow {
+	-ms-flex: 40%;
+	flex: 40%;
+	max-width: 40%;
+	margin: 4%;
+}
+#emailform {
+	width: 90vw;
+}
+#emailform input, label, textarea {
+	width: 90vw;
+	height: 5vw;
+}
+}
+
+/*Jquery responsive til Smartphone*/
 @media only screen and (max-width: 600px) {
 .type {
-    top: 10%;
-    font-size: 40px;
+	top: 10%;
+	font-size: 40px;
 }
 .beskrivelse h1 {
-    flex: 80%;
-    font-size: 30px;
-    max-width: 100%;
+	flex: 80%;
+	font-size: 30px;
+	max-width: 100%;
 }
 .beskrivelse p {
-    width: 70%;
+	width: 70%;
+}
+.beskrivelse img {
+	max-width: 35%;
 }
 .skills_box {
-    width: 95%;
+	width: 95%;
 }
 .portfolio_header {
-    /*top: 1000px;*/
 	margin-top: 120px;
 }
 .portfolio_header h1 {
-    font-size: 30px;
+	font-size: 30px;
 }
 .flow {
-    -ms-flex: 80%;
-    flex: 80%;
-    max-width: 80%;
-    margin: 5% 10%;
+	-ms-flex: 80%;
+	flex: 80%;
+	max-width: 80%;
+	margin: 5% 10%;
 }
 .flow img {
-    width: 80%
+	width: 80%
 }
 .flow_image {
-    width: 30%;
-    margin: 20px;
+	width: 30%;
+	margin: 20px;
 }
 .flow p {
-    width: 90%;
-    padding: 0 5%;
-    margin-bottom: 5%;
+	width: 90%;
+	padding: 0 5%;
+	margin-bottom: 5%;
 }
 #contact_page {
-    margin-top: 200%;
+	margin-top: 200%;
 	bottom: 0;
-    flex: 100%;
+	flex: 100%;
 }
-.contact_header h1 { 
-    font-size: 30px;
+.contact_header h1 {
+	font-size: 30px;
 }
 #emailform {
-    width: 90vw;
+	width: 90vw;
 }
 #emailform input, label, textarea {
-    width: 90vw;
-    height: 10vw;
+	width: 90vw;
+	height: 10vw;
 }
 }
